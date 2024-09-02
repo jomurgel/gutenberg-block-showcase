@@ -1,0 +1,23 @@
+{
+	"extends": "@penskemediacorp/stylelint-config",
+	"customSyntax": "postcss-scss",
+	"rules": {
+		"selector-max-compound-selectors": [
+			4,
+			{
+				"max": 4
+			}
+		],
+		"max-nesting-depth": 5,
+		"selector-no-qualifying-type": null,
+		"selector-nested-pattern": null,
+		"selector-max-class": [
+			4,
+			{
+				"max": 4
+			}
+		],
+		"selector-max-specificity": null,
+		"unit-disallowed-list": null
+	}
+}

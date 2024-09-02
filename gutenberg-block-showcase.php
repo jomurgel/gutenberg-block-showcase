@@ -36,11 +36,11 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'GOOTS_DIR', plugin_dir_path(__FILE__) );
-define( 'GOOTS_BUILD_PATH', plugin_dir_url(__FILE__) );
+define( 'GOOTS_DIR', plugin_dir_path( __FILE__ ) );
+define( 'GOOTS_PATH', plugin_dir_url( __FILE__ ) );
 
-require_once GOOTS_DIR . '/classes/class-admin.php';
+require_once GOOTS_DIR . '/classes/class-init-showcase.php';
 
-if ( class_exists( '\\GOOTS\\Admin' ) ) {
+if ( class_exists( '\\Goots\\Init_Showcase' ) ) {
   Init_Showcase::init();
 }
