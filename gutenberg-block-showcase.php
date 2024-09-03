@@ -40,7 +40,12 @@ define( 'GOOTS_DIR', plugin_dir_path( __FILE__ ) );
 define( 'GOOTS_PATH', plugin_dir_url( __FILE__ ) );
 
 require_once GOOTS_DIR . '/classes/class-init-showcase.php';
+require_once GOOTS_DIR . '/classes/class-post-type-showcase.php';
 
 if ( class_exists( '\\Goots\\Init_Showcase' ) ) {
   Init_Showcase::init();
+}
+
+if ( class_exists( '\\Goots\\Showcase_Post_Type' ) ) {
+  Showcase_Post_Type::init();
 }
