@@ -1,0 +1,60 @@
+//--------------------------------------------------------------
+// Editor Styles for the Top Block
+//--------------------------------------------------------------
+
+/* stylelint-disable declaration-no-important */
+
+[data-type='gbs/top-block'] {
+	background-color: rgb(249,249,249);
+	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 3.125rem;
+	margin-left: -0.588rem !important; // Required to avoid the block to be pushed to the right.
+	margin-top: -0.588rem;
+	max-width: calc(100% + 1.25rem) !important; // Overwrites inline styles injected in the header.
+	padding: 1.5rem 0.938rem 0; // Give the top-most blocks some breathing room.
+	pointer-events: none;
+	width: calc(100% + 1.25rem);
+
+	&:focus::after {
+		display: none;
+	}
+
+	// Enable pointer events for all children.
+	* {
+		pointer-events: auto;
+	}
+
+	//-----------------------------------------
+	// Style targeting for known elements.
+	//-----------------------------------------
+
+	// Add extra margin for the title by itself.
+	[data-type='gbs/post-title']:only-child {
+		margin-bottom: 1rem;
+	}
+
+	// Add spacing for last item.
+	[data-type]:last-child {
+		margin-bottom: 2rem;
+		margin-top: 0;
+	}
+
+	// Remove excerpt margins if it falls right after the title.
+	[data-type='gbs/post-title'] + [data-type='core/post-excerpt']:not(:last-child) {
+		margin-bottom: 0;
+		margin-top: 0;
+
+		> .block-editor-rich-text__editable {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+	}
+}
+
+//-----------------------------------------
+// Globally fix the appearance of the datetime popover.
+//-----------------------------------------
+
+.components-flex.components-datetime {
+	padding: 0.625rem;
+}

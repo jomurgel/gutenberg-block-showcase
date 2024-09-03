@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "gbs/post-title",
+	"title": "GBS Post Title",
+	"category": "showcase",
+	"icon": "heading",
+	"description": "A replacement for the default WordPress post title.",
+	"keywords": [ "title", "post", "default", "required" ],
+	"textdomain": "gutenberg-block-showcase",
+	"supports": {
+		"align": false,
+		"anchor": false,
+		"className": false,
+		"customClassName": false,
+		"html": false,
+		"inserter": true,
+		"multiple": false,
+		"reusable": false
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

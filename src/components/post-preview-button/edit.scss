@@ -1,0 +1,27 @@
+//--------------------------------------------------------------
+// Editor styles for the post-preview-button.
+//--------------------------------------------------------------
+
+.component__post-preview-button-group.has-device-preview {
+	border: 1px solid #efefef;
+	border-radius: 2px;
+	display: flex;
+
+	.component__post-preview-dropdown-toggle.components-dropdown-menu__toggle {
+		border-bottom-left-radius: 0;
+		border-left: 1px solid #efefef;
+		border-top-left-radius: 0;
+		margin-left: 1px;
+		min-width: 0;
+		padding: 0;
+		z-index: 10;
+	}
+}
+
+.interface-interface-skeleton__sidebar {
+
+	@media (min-width: 782px) {
+		// Force-adapt editor.
+		z-index: 25 !important; // stylelint-disable declaration-no-important
+	}
+}

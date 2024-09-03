@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "gbs/tease",
+	"title": "GBS Tease",
+	"category": "showcase",
+	"icon": "star-empty",
+	"description": "Tease Collpsable block.",
+	"keywords": [ "tease", "special-report" ],
+	"textdomain": "gbs-gutenberg",
+	"attributes": {
+		"teaseText": {
+			"default": "",
+			"type": "string"
+		}
+	},
+	"supports": {
+		"align": false,
+		"anchor": false,
+		"className": true,
+		"customClassName": false,
+		"html": false,
+		"inserter": true,
+		"multiple": true,
+		"reusable": false
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

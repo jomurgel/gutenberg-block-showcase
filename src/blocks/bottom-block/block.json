@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "gbs/bottom-block",
+	"title": "Bottom Block",
+	"category": "showcase",
+	"icon": "editor-kitchensink",
+	"description": "The container block at the bottom of the page.",
+	"textdomain": "gutenberg-block-showcase",
+	"attributes": {
+		"lock": {
+			"type": "object",
+			"default": {
+				"move": true,
+				"remove": true
+			}
+		}
+	},
+	"supports": {
+		"anchor": false,
+		"customClassName": false,
+		"html": false,
+		"multiple": false,
+		"inserter": false
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

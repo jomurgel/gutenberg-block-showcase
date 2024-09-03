@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "gbs/seo",
+	"title": " SEO",
+	"category": "showcase",
+	"parent": [ "gbs/bottom-block" ],
+	"icon": "admin-site-alt3",
+	"description": "Defines SEO values for the current post.",
+	"textdomain": "gutenberg-block-showcase",
+	"supports": {
+		"anchor": false,
+		"customClassName": false,
+		"html": false,
+		"inserter": false,
+		"multiple": false
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

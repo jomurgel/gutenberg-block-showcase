@@ -1,0 +1,19 @@
+//--------------------------------------------------------------
+// Editor Styles for Search Demo
+//--------------------------------------------------------------
+
+[data-type="gbs/search-demo"] {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+  padding: 1rem;
+  background: #fff;
+
+  .post-search-control {
+    padding: 0.625rem;
+    background-color: #fff;
+  }
+
+  h3 {
+    margin: 0 0 0.5rem;
+  }
+}

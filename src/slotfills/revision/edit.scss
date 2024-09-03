@@ -1,0 +1,16 @@
+//-----------------------------------------
+// Style panel.
+//-----------------------------------------
+.revision-list {
+
+	p:last-of-type {
+		border: 0;
+		padding-bottom: 0;
+	}
+
+	.revision-list--author {
+		border-bottom: 1px solid #eee;
+		margin: 0;
+		padding: 0.25rem 0;
+	}
+}

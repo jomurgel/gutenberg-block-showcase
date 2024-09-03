@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "gbs/post-date",
+	"title": " Post Date",
+	"category": "showcase",
+	"parent": [ "gbs/top-block" ],
+	"icon": "calendar",
+	"description": "Custom block to display post date that goes in topper block",
+	"textdomain": "gutenberg-block-showcase",
+	"attributes": {
+		"manualDate": {
+			"type": "string",
+			"default": null
+		}
+	},
+	"supports": {
+		"anchor": false,
+		"customClassName": false,
+		"html": false,
+		"inserter": false,
+		"multiple": false
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css"
+}

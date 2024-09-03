@@ -1,0 +1,96 @@
+//--------------------------------------------------------------
+// Editor Styles for the Post Term Selector block.
+//--------------------------------------------------------------
+
+[data-type='gbs/post-term-selector'] {
+
+	&.is-term-flat .component-wrapper {
+		@media (min-width: 48rem) {
+			display: flex;
+		}
+	}
+
+	&.is-selected .components-placeholder__label {
+		margin-bottom: 0;
+	}
+
+	&.is-term-hierarchical .component-wrapper {
+		@media( min-width: 48rem) {
+			display: grid;
+			column-gap: 1.563rem;
+			grid-template-areas: 'list search'
+				'list new'
+				'list .';
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.editor-post-taxonomies__hierarchical-terms-list {
+		border-radius: 0.25rem;
+		border: 1px solid #e0e0e0;
+		grid-area: list;
+		margin-left: 0;
+		overflow-y: scroll;
+		padding: 0.5rem;
+	}
+
+	.editor-post-taxonomies__hierarchical-terms-add {
+		grid-area: new;
+		padding: 0;
+
+		@media( min-width: 48rem) {
+			margin-top: 0;
+		}
+	}
+
+	.editor-post-taxonomies__hierarchical-terms-filter {
+		grid-area: search;
+
+		@media( min-width: 48rem) {
+			margin-bottom: 0;
+		}
+	}
+
+	.term-selector-loader {
+		height: 0.75rem;
+		left: 6.25rem;
+		margin-top: 0.25rem;
+		position: absolute;
+		width: 0.75rem;
+	}
+
+	.components-base-control__label,
+	.editor-post-taxonomies__flat-term-most-used-label,
+	.components-form-token-field__label {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		font-size: 0.75rem;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
+
+	.editor-post-taxonomies__flat-term-most-used-list {
+		padding: 0;
+
+		li button {
+			padding: 0;
+		}
+	}
+
+	.components-base-control {
+		flex: 1 1 auto;
+	}
+
+	.components-base-control__field,
+	.components-form-token-field__input-container {
+		margin-bottom: 0;
+	}
+
+	.components-base-control__help,
+	.components-form-token-field__help {
+		margin-top: 0;
+	}
+
+	.components-button.has-icon.components-form-token-field__remove-token {
+		padding: 0;
+	}
+}

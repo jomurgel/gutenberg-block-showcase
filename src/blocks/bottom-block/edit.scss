@@ -1,0 +1,92 @@
+//--------------------------------------------------------------
+// Editor styles for the bottom block.
+//--------------------------------------------------------------
+
+//-----------------------------------------
+// Block wrapper
+//-----------------------------------------
+.editor-styles-wrapper {
+	overflow-x: hidden;
+}
+
+//-----------------------------------------
+// Bottom Block
+//-----------------------------------------
+[data-type='gbs/bottom-block'] {
+	margin-bottom: -0.563rem; // Mock removal of the padding without modifying the global scope.
+	pointer-events: none;
+
+  .editor-styles-wrapper .block-editor-block-list__layout.is-root-container > &:where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    max-width: 100%;
+  }
+
+	&:focus::after {
+		display: none;
+	}
+
+	&::before {
+		display: block;
+		content: '';
+		padding-top: 21.875rem; // Add extra margin above what is there by default.
+		pointer-events: none;
+	}
+
+	// Enable pointer events for all children.
+	* {
+		pointer-events: auto;
+		z-index: 1;
+	}
+
+	// Hide the block list appender after the bottom block.
+	+ .block-list-appender {
+		display: none;
+	}
+
+	> [data-type] {
+		background-color: rgb(249,249,249);
+		margin: 0 auto;
+		padding: 0.938rem;
+
+		&::before {
+			background-color: rgb(249,249,249);
+			border-top: 1px solid #e0e0e0;
+			content: '';
+			display: block;
+			height: 100%;
+			left: calc(-50vw + 50%);
+			position: absolute;
+			top: 0;
+			width: 100vw;
+			z-index: 0;
+		}
+
+		&:last-child .block-editor-block-list__block.collapsable-wrapper {
+			border-bottom-width: 1px;
+		}
+
+		// stylelint-disable-next-line no-descending-specificity
+		.block-editor-block-list__block.collapsable-wrapper {
+			max-width: 100%;
+		}
+
+		&:not(.is-selected) {
+			.components-placeholder__label,
+			.components-placeholder__instructions {
+				margin-bottom: 0;
+
+				+ .components-placeholder__fieldset:not(:empty) {
+					margin-top: 0.83rem;
+				}
+			}
+		}
+	}
+
+	.components-placeholder {
+		min-height: 0;
+	}
+
+	.component-container {
+		background-color: #fff;
+		margin: 0 auto;
+	}
+}

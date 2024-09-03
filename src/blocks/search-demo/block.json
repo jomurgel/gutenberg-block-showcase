@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gbs/search-demo",
+  "title": "GBS Search Demo",
+  "category": "showcase",
+  "icon": "search",
+  "description": "A demo search block. Shows off the Post Search components.",
+  "textdomain": "gbs-gutenberg",
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "className": true,
+    "customClassName": false,
+    "html": false,
+    "inserter": true,
+    "multiple": true,
+    "reusable": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

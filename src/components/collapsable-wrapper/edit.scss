@@ -1,0 +1,73 @@
+//--------------------------------------------------------------
+// Collapsable Wrapper Styles
+//--------------------------------------------------------------
+
+.collapsable-wrapper {
+	background-color: #fff;
+	border: 1px solid #1e1e1e;
+	outline: 0.063rem solid transparent;
+	background-color: rgb(249,249,249);
+	border-color: #e0e0e0;
+	border-width: 1px 0 0;
+	margin: 0;
+}
+
+.collapsable-wrapper__button {
+	border: 1px solid #1e1e1e;
+	border-color: #e0e0e0;
+	border-width: 0 0 1px 0;
+	background-color: #fff;
+	height: auto;
+	padding: 0.75rem;
+}
+
+// Toggle Button.
+.collapsable-wrapper__button.components-button {
+	height: auto;
+	justify-content: left;
+	padding: 0.75rem 0.5rem;
+	width: 100%;
+}
+
+.collapsable-wrapper__button--remove {
+	margin: 0 0 0 0.5em;
+
+	.svg {
+		margin-right: 0;
+	}
+}
+
+.collapsable-wrapper__container {
+	align-items: center;
+	display: inline-flex;
+	justify-content: left;
+	margin: 0 auto;
+	max-width: 100%;
+	width: 100%;
+}
+
+.collapsable-wrapper__button--icon {
+	margin: 0 0.5rem 0 0;
+}
+
+.collapsable-wrapper__button--chevron {
+	margin: 0 0 0 auto;
+}
+
+.collapsable-wrapper__buttoncomponents-button:focus:not(:disabled) {
+	box-shadow: none;
+}
+
+// Children container.
+.collapsable-wrapper__content {
+	background-color: #fff;
+	padding: 1em;
+
+	.block-editor-block-list__layout [data-type] {
+		margin-top: 0;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

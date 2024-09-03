@@ -1,0 +1,28 @@
+//--------------------------------------------------------------
+// Editor Styles for Post Date Block
+//--------------------------------------------------------------
+
+[data-type='gbs/post-date'] {
+
+	.post-date__wrapper {
+		max-width: 17.5rem;
+
+		.post-date {
+			align-items: center;
+			display: flex;
+			box-shadow: none;
+			color: #010101;
+			font-size: 1.1rem;
+			padding: 0;
+
+			&:hover {
+				box-shadow: none;
+				color: #010101;
+			}
+
+			svg {
+				margin-right: 0.5rem;
+			}
+		}
+	}
+}
