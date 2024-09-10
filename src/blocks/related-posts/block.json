@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "gbs/related-posts",
+  "title": "GBS Related Posts Demo",
+  "category": "showcase",
+  "icon": "admin-post",
+  "description": "A related posts demo from https://github.com/jomurgel/gutenberg-related-posts-block.",
+  "textdomain": "gbs-gutenberg",
+  "attributes": {
+    "selectedPosts": {
+      "type": "array"
+		}
+  },
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "className": true,
+    "customClassName": false,
+    "html": false,
+    "inserter": true,
+    "multiple": false,
+    "reusable": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}
